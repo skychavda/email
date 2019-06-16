@@ -4,11 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "webcube technology",
   "license": "ISC",
   "dependencies": {
     "@sendgrid/mail": "^6.4.0",
