@@ -8,10 +8,6 @@ app.use(cors());
 
 sgMail.setApiKey('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');
 
-app.get('/', (req, res) => {
-  res.send('Server is running');
-})
-
 app.get('/send-email', (req, res) => {
   const msg = {
     to: 'webcubetech.contact@gmail.com',
