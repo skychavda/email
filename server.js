@@ -19,5 +19,3 @@ app.get('/send-email', (req, res) => {
     console.log(msg);
   });
 });
-
-app.listen(8080, () => console.log('running on port 8080'));
