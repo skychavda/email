@@ -29,14 +29,14 @@ app.get('/send-email', (req, res) => {
     var transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'skychavda9@gmail.com',
-        pass: 'bqcm2059KS'
+        user: '',
+        pass: ''
       }
     });
 
   var mailOptions = {
     from: req.query.sender,
-    to: 'skychavda9@gmail.com',
+    to: '',
     subject: req.query.subject,
     text: req.query.message
   };
