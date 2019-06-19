@@ -25,16 +25,12 @@ app.get('/send-email', async (req, res) => {
     console.log(msg);
   });
 
-  let testAccount = await nodemailer.createTestAccount();
-
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: "smtp.ethereal.email",
-    port: 587,
-    secure: false, // true for 465, false for other ports
+    service: 'gmail',
     auth: {
-      user: testAccount.user, // generated ethereal user
-      pass: testAccount.pass // generated ethereal password
+      user: 'skychavda9@gmail.com',
+      pass: 'bqcm2059KS'
     }
   });
 
