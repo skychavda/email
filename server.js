@@ -40,7 +40,7 @@ app.get('/send-email', async (req, res) => {
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: 'webcubetech.contact@gmail.com', // sender address
+    from: 'skychavda9@gmail.com', // sender address
     to: req.query.sender, // list of receivers
     subject: req.query.subject, // Subject line
     text: req.query.message, // plain text body
